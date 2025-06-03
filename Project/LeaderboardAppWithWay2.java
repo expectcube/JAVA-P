@@ -53,18 +53,21 @@ public class LeaderboardAppWithWay2 {
         carinama = scanner.nextLine();
 
         for (i = 0; i < orang.length; i++){
-            if (orang[i].name.equals(carinama)) 
-            {
-            System.out.println("Ditemukan: " + orang[i].name + " dengan skor " + orang[i].score);
-            System.out.println("Peringkat: " + (i + 1));
-            System.out.println();
-            num = num + 1;}}
-            if (i == orang.length){
+            if (orang[i].name.equals(carinama)) {
+                System.out.println("Ditemukan: " + orang[i].name + " dengan skor " + orang[i].score);
+                System.out.println("Peringkat: " + (i + 1));
+                System.out.println();
+                num = num + 1;
+            }
+        }
+
+        if (i == orang.length){
             if (num == 0)
             System.out.println("Pemain dengan nama '" + carinama + "' tidak ditemukan.");
 
         }
-
+        
+        scanner.close();
 
     }
 }
