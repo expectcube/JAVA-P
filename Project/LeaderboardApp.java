@@ -4,6 +4,12 @@ import java.util.Scanner;
 class Player {
     String name;
     int score;
+
+	Player(String name, int score) {
+        	this.name = name;
+	        this.score = score;
+	}
+	
 }
 
 public class LeaderboardApp {
