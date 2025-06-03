@@ -47,7 +47,7 @@ public class LeaderboardAppWithWay2 {
         // Pencarian pemain
         int i;
         String carinama;
-        int num = 0;
+        int num = 0; //counting
 
         System.out.print("Masukkan Username yang dicari : ");
         carinama = scanner.nextLine();
