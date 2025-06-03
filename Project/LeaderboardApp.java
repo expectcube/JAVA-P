@@ -63,5 +63,6 @@ public class LeaderboardApp {
         }
 
         scanner.close();
+
     }
 }
