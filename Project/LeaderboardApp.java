@@ -28,15 +28,15 @@ public class LeaderboardApp {
         }
 
         // Sorting berdasarkan skor (insertion sort descending)
-			for (int i = 1; i < orang.length; i++)   {
-				Player temp = orang[i];
-				int j=i;
-				while( (j>0) && (temp.score > orang[j - 1].score ) ) {
-					orang[j] = orang[j - 1];
-					j--;
-				}
-				orang[j]=temp;
+		for (int i = 1; i < orang.length; i++)   {
+			Player temp = orang[i];
+			int j=i;
+			while( (j>0) && (temp.score > orang[j - 1].score ) ) {
+				orang[j] = orang[j - 1];
+				j--;
 			}
+			orang[j]=temp;
+		}
 
         // Tampilkan leaderboard
         System.out.println("\n=== [Leaderboard Top Global] ===");
