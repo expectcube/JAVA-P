@@ -39,7 +39,7 @@ public class LeaderboardAppWithWay2 {
 		}
 
         // Tampilkan leaderboard
-        System.out.println("\n=== [Leaderboard Top Global] ===");
+        System.out.println("\n=== [Leaderboard " + (jumlah) + " Top Global] ===");
         for (int i = 0; i < orang.length; i++) {
             System.out.println((i + 1) + ". " + orang[i].name + " - " + orang[i].score);
         }
@@ -49,7 +49,7 @@ public class LeaderboardAppWithWay2 {
         String carinama;
         int num = 0; //counting
 
-        System.out.print("Masukkan Username yang dicari : ");
+        System.out.print("Masukkan Nama Pemain yang ingin dicari : ");
         carinama = scanner.nextLine();
 
         for (i = 0; i < orang.length; i++){
